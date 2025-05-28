@@ -8,5 +8,5 @@ A lightweight, customizable CSS framework built using Sass. This framework provi
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/css-framework.git
+   git clone https://github.com/sahilmalik9/CSS-framework
    cd css-framework
