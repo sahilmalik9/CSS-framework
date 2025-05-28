@@ -1,0 +1,227 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  color: #333;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #4CAF50;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+ul, ol {
+  margin: 1rem 0;
+  padding-left: 1.5rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1.5rem;
+  border: 1px solid #ccc;
+}
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+  text-align: left;
+}
+table th {
+  background-color: #FF5722;
+  color: white;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+button:hover {
+  background-color: rgb(60.5577689243, 139.4422310757, 63.7450199203);
+}
+button:disabled {
+  background-color: rgb(181.0956175299, 222.9043824701, 182.7848605578);
+  cursor: not-allowed;
+}
+
+input[type=text],
+input[type=email],
+input[type=password],
+textarea,
+select {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 1rem;
+  box-sizing: border-box;
+}
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=password]:focus,
+textarea:focus,
+select:focus {
+  border-color: #4CAF50;
+  outline: none;
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+
+label {
+  display: block;
+  margin-bottom: 0.25rem;
+  font-weight: 700;
+  color: #333;
+}
+
+.mt-1 {
+  margin-top: 0.25rem !important;
+}
+
+.mt-2 {
+  margin-top: 0.5rem !important;
+}
+
+.mt-3 {
+  margin-top: 1rem !important;
+}
+
+.mb-1 {
+  margin-bottom: 0.25rem !important;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem !important;
+}
+
+.mb-3 {
+  margin-bottom: 1rem !important;
+}
+
+.ml-1 {
+  margin-left: 0.25rem !important;
+}
+
+.ml-2 {
+  margin-left: 0.5rem !important;
+}
+
+.ml-3 {
+  margin-left: 1rem !important;
+}
+
+.mr-1 {
+  margin-right: 0.25rem !important;
+}
+
+.mr-2 {
+  margin-right: 0.5rem !important;
+}
+
+.mr-3 {
+  margin-right: 1rem !important;
+}
+
+.pt-1 {
+  padding-top: 0.25rem !important;
+}
+
+.pt-2 {
+  padding-top: 0.5rem !important;
+}
+
+.pt-3 {
+  padding-top: 1rem !important;
+}
+
+.pb-1 {
+  padding-bottom: 0.25rem !important;
+}
+
+.pb-2 {
+  padding-bottom: 0.5rem !important;
+}
+
+.pb-3 {
+  padding-bottom: 1rem !important;
+}
+
+.pl-1 {
+  padding-left: 0.25rem !important;
+}
+
+.pl-2 {
+  padding-left: 0.5rem !important;
+}
+
+.pl-3 {
+  padding-left: 1rem !important;
+}
+
+.pr-1 {
+  padding-right: 0.25rem !important;
+}
+
+.pr-2 {
+  padding-right: 0.5rem !important;
+}
+
+.pr-3 {
+  padding-right: 1rem !important;
+}
+
+.text-sm {
+  font-size: 0.875rem !important;
+}
+
+.text-base {
+  font-size: 16px !important;
+}
+
+.text-lg {
+  font-size: 1.25rem !important;
+}
+
+.fw-normal {
+  font-weight: 400 !important;
+}
+
+.fw-bold {
+  font-weight: 700 !important;
+}
+
+.text-primary {
+  color: #4CAF50 !important;
+}
+
+.text-secondary {
+  color: #FF5722 !important;
+}
+
+.text-dark {
+  color: #333 !important;
+}
+
+.border {
+  border: 1px solid #ccc !important;
+}
+
+.rounded {
+  border-radius: 4px !important;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,8 +1,12 @@
-# CSS-framework
+# 🌟 Custom CSS Framework
 
+A lightweight, customizable CSS framework built using Sass. This framework provides a clean and modern design theme for standard HTML elements and includes utility classes for fast prototyping.
 
-## Framework Name
-NovaCSS 
+---
 
-## Description
-NovaCSS is a custom CSS framework built using Sass. It provides a consistent theme for standard HTML elements and includes utility classes for rapid styling. Users can easily customize colors, font sizes, spacing, and more using variables.
+## 📦 Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/css-framework.git
+   cd css-framework

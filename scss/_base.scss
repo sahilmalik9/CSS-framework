@@ -1,0 +1,42 @@
+body {
+  font-family: $font-family-base;
+  font-size: $font-size-base;
+  color: $text-color;
+  background-color: $background-color;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: $primary-color;
+  font-weight: $font-weight-bold;
+  margin-bottom: $spacing-sm;
+}
+
+p {
+  margin-bottom: $spacing-md;
+}
+
+ul, ol {
+  margin: $spacing-md 0;
+  padding-left: $spacing-lg;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: $spacing-lg;
+  border: 1px solid $border-color;
+  
+  th, td {
+    border: 1px solid $border-color;
+    padding: $spacing-sm;
+    text-align: left;
+  }
+  
+  th {
+    background-color: $secondary-color;
+    color: white;
+  }
+}

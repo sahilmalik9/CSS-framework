@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Custom CSS Framework Demo</title>
+  <link rel="stylesheet" href="dist/style.css" />
+  <style>
+    :root {
+      --bg-light: #f9f9f9;
+      --bg-dark: #1e1e1e;
+      --text-light: #222;
+      --text-dark: #f1f1f1;
+    }
+
+    [data-theme="light"] {
+      background-color: var(--bg-light);
+      color: var(--text-light);
+    }
+
+    [data-theme="dark"] {
+      background-color: var(--bg-dark);
+      color: var(--text-dark);
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 2rem;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #007acc;
+      color: white;
+      padding: 1rem;
+      border-radius: 10px;
+    }
+
+    nav a {
+      color: white;
+      margin-left: 1rem;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    nav .nav-links {
+      display: flex;
+    }
+
+    button.toggle-theme {
+      background: white;
+      color: #007acc;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    section {
+      margin-bottom: 2rem;
+    }
+
+    .btn {
+      margin: 0.5rem 0;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: color-mix(in srgb, #007acc 80%, #fff);
+    }
+
+    form {
+      display: grid;
+      gap: 1rem;
+      max-width: 400px;
+    }
+
+    input, select, textarea, button {
+      padding: 0.75rem;
+      font-size: 1rem;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+    }
+
+    table, th, td {
+      border: 1px solid #ccc;
+      padding: 0.75rem;
+    }
+
+    .grid-demo {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+    }
+
+    .grid-box {
+      padding: 2rem;
+      background: #e6f2ff;
+      text-align: center;
+      border-radius: 10px;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 3rem;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="nav-brand"><strong>CSS Framework</strong></div>
+    <div class="nav-links">
+      <a href="#buttons">Buttons</a>
+      <a href="#form">Form</a>
+      <a href="#table">Table</a>
+      <a href="#grid">Grid</a>
+    </div>
+    <button class="toggle-theme">Toggle Theme</button>
+  </nav>
+
+  <header>
+    <h1>Custom CSS Framework</h1>
+    <p>A lightweight, responsive, and customizable Sass-based framework.</p>
+  </header>
+
+  <section id="buttons">
+    <h2>Buttons</h2>
+    <button class="btn">Primary Button</button>
+    <button class="btn btn-secondary">Secondary Button</button>
+  </section>
+
+  <section id="form">
+    <h2>Form Elements</h2>
+    <form>
+      <label for="name">Name</label>
+      <input type="text" id="name" placeholder="Enter your name">
+
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="Enter your email">
+
+      <label for="message">Message</label>
+      <textarea id="message" rows="4" placeholder="Type your message..."></textarea>
+
+      <button type="submit" class="btn">Submit</button>
+    </form>
+  </section>
+
+  <section id="table">
+    <h2>Table Example</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Joined</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Sahil Malik</td>
+          <td>sahil@example.com</td>
+          <td>May 2025</td>
+        </tr>
+        <tr>
+          <td>Jane Doe</td>
+          <td>jane@example.com</td>
+          <td>April 2025</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section id="grid">
+    <h2>Grid Layout Demo</h2>
+    <div class="grid-demo">
+      <div class="grid-box">Box 1</div>
+      <div class="grid-box">Box 2</div>
+      <div class="grid-box">Box 3</div>
+      <div class="grid-box">Box 4</div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Custom CSS Framework. Built with Sass 💙</p>
+  </footer>
+
+  <script>
+    const toggleBtn = document.querySelector('.toggle-theme');
+    toggleBtn.addEventListener('click', () => {
+      const html = document.documentElement;
+      const current = html.getAttribute('data-theme');
+      html.setAttribute('data-theme', current === 'dark' ? 'light' : 'dark');
+    });
+  </script>
+</body>
+</html>
