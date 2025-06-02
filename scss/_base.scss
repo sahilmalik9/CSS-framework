@@ -6,21 +6,38 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 h1, h2, h3, h4, h5, h6 {
   color: $primary-color;
   font-weight: $font-weight-bold;
   margin-bottom: $spacing-sm;
+  line-height: 1.2;
 }
 
 p {
   margin-bottom: $spacing-md;
+  max-width: 70ch;
 }
 
 ul, ol {
   margin: $spacing-md 0;
   padding-left: $spacing-lg;
+  line-height: 1.5;
+}
+
+a {
+  color: $primary-color;
+  text-decoration: none;
+  transition: color 0.3s ease;
+
+  &:hover,
+  &:focus {
+    color: darken($primary-color, 10%);
+    text-decoration: underline;
+  }
 }
 
 table {
@@ -28,15 +45,40 @@ table {
   border-collapse: collapse;
   margin-bottom: $spacing-lg;
   border: 1px solid $border-color;
-  
-  th, td {
+
+  th,
+  td {
     border: 1px solid $border-color;
     padding: $spacing-sm;
     text-align: left;
   }
-  
+
   th {
     background-color: $secondary-color;
     color: white;
+    font-weight: $font-weight-bold;
+  }
+
+  tr:nth-child(even) {
+    background-color: lighten($background-color, 4%);
+  }
+
+  tr:hover {
+    background-color: lighten($secondary-color, 20%);
+  }
+}
+
+/* Responsive Typography */
+@media (max-width: 768px) {
+  body {
+    font-size: calc($font-size-base * 0.95);
+  }
+
+  h1 {
+    font-size: 1.8em;
+  }
+
+  h2 {
+    font-size: 1.5em;
   }
 }
